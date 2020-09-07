@@ -12,7 +12,11 @@
 <style>  
   body,h1,h2,h3,h4,h5{color: white;}{font-family: "Lexend Exa", sans-serif};
  </style>
-
+  
+<!-- import the webpage's javascript file -->
+    <script src="/script.js" defer></script>
+   <!-- import the latest version of hydra synth-->
+    <script src="https://unpkg.com/hydra-synth"></script>
   
 <!-- Navigation -->
 <nav class="w3-bar w3-black w3-top">
@@ -24,7 +28,18 @@
 
 <!-- Header -->
 <header class="w3-display-container w3-content w3-wide" style="max-width:1500px;" id="inicio">
-  <img class="w3-image" src="image github/emperatriz.jpg" width="1500" height="800">
+ //<img class="w3-image" src="image github/emperatriz.jpg" width="1500" height="800">
+  <canvas id="myCanvas" width="1500px" height="800px"></canvas>
+  <body>
+   <script>
+      // create a new hydra-synth instance
+      var hydra = new Hydra({
+        canvas: document.getElementById("myCanvas")
+      })
+       solid(0,1,0).layer(osc(30,0,[1,2].smooth(1)).modulate(noise(3)).rotate(()=>time*5).hue(()=>Math.sin(time)*0.5).mask(shape([200,3].smooth().fast(0.5),[1,2,4,8].smooth(1),0.3).scale(0.5,0.5)).luma(0.1)).layer(src(o0).scale(0.99).mask(shape(200,4).scale(0.5,0.5),0.5).luma(0.01).scrollX(0.001).scrollY([-0.001,0.001].smooth(1).fast(0.5)).luma(0.1)).layer(src(o0).saturate(1.02).luma([0.3,0.9].smooth().fast(1)).scrollY(-0.001)).modulate(voronoi(8,1).thresh(0.5),0.005).add(src(o0).colorama(0.001).scrollX(-0.001),0.002).scrollX(0.001).modulateRotate(osc(10),0.008).blend(o0,0.2).modulate(src(o0).scrollY(-0.005),[-0.01,0.01].smooth()).modulateScrollY(osc(10),-0.001).colorama(0.001).scale([1.02,1].smooth(1)).saturate([1,1.02].smooth(1)).luma([0.001,0.005].smooth()).out()
+speed= 0.1
+      </script>
+    </body>
 </header>
 
 <section class="w3-container w3-center w3-content" id="inicio" style="max-width:1000px">
