@@ -1,0 +1,44 @@
+body {
+background: black; 
+color: whitesmoke;
+font-family: 'Roboto Mono', monospace;   
+}
+
+h1,h2,h3,h4,h5{
+color:whitesmoke;
+font-family: 'Roboto Mono', monospace;       
+}
+
+.retrato {
+border-radius: 50%; 
+width:40%;   
+}
+
+
+  /* Fading animation */
+  .fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1s;
+    animation-name: fade;
+    animation-duration: 1s;
+  }
+  
+  @-webkit-keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+  }
+  
+  @keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+  }
+  
+  /* On smaller screens, decrease text size */
+  @media only screen and (max-width: 300px) {
+    .text {font-size: 11px}
+  }
+
+  .ciberpoesia {
+    border-radius: 50%;
+    width:80%; 
+    }
