@@ -44,77 +44,68 @@
     <a href="contact.html" class="w3-bar-item w3-button w3-padding-large">contact</a>
 </div>
 
+
+
 <!-- Header -->
 <canvas id="myCanvas"></canvas> 
 
 
 <!-- First Grid -->
 <div class="w3-row-padding w3-padding-64 w3-container w3-center">
-  <div class="w3-content w3-padding w3-text-white" style="text-shadow:1px 1px 0 #444">
+  <div class="w3-content w3-padding w3-text-white" style="text-shadow:1px 1px 0 #444;">
 
-   
    <div class="w3-display-container">
-    <h2>Workshops</h2>
-    <h3>Hydra: Live Coding Visuals for Live Performances - <a href="https://sound.mplab.lv/en/">Sound Days</a></h3>
-    <p>Pictures by Karlis Volkovskis</p>
-    <div class="w3-row-padding">
-        <div class="w3-container w3-third">
-      <img src="assets/workshops/24 DSC00792_KarlisVolkovskisFoto.jpg" style="width:100%;cursor:pointer" 
-          onclick="onClick(this)" class="w3-hover-opacity">
-        </div>
-        <div class="w3-container w3-third">
-     <img src="assets/workshops/DSC08466_KarlisVolkovskisFoto.jpg.jpg" style="width:100%;cursor:pointer" 
-          onclick="onClick(this)" class="w3-hover-opacity">
-        </div>
-        <div class="w3-container w3-third">
-            <img src="assets/workshops/DSC08474_KarlisVolkovskisFoto.jpg.jpg" style="width:100%;cursor:pointer" 
-                 onclick="onClick(this)" class="w3-hover-opacity">
-               </div>
-
-      </div>
-<hr>
-    <h3>  
-     Live coding in Hydra - workshop at <a href="https://iterations.online/" target="_blank">Iterations</a> festival 2024. <a href="https://designmuseum.nl/" target="_blank">Design Museum Den Bosch</a>. Netherlands. 
+    <h1>You make me screen - exhibition at Arc Gallery, Tresor West. Dortmund, Germany.</h1>
+    <h3>
     </h3>
-    <p>Pictures by Paulus van Dorsten</p>
     <div class="w3-container">
        
     <div class="w3-row-padding">
       <div class="w3-container w3-third">
-    <img src="assets/workshops/54208980056_7d44f6dbe4_c.jpg" style="width:100%;cursor:pointer" 
+    <img src="assets/arc/1.jpg" style="width:100%;cursor:pointer" 
         onclick="onClick(this)" class="w3-hover-opacity">
       </div>
       <div class="w3-container w3-third">
-   <img src="assets/workshops/54208981746_be459ea657_c.jpg" style="width:100%;cursor:pointer" 
+   <img src="assets/arc/2.jpg" style="width:100%;cursor:pointer" 
         onclick="onClick(this)" class="w3-hover-opacity">
       </div>
-
       <div class="w3-container w3-third">
-        <img src="assets/workshops/54209218789_f19c616c80_c.jpg" style="width:100%;cursor:pointer" 
+        <img src="assets/arc/3.jpg" style="width:100%;cursor:pointer" 
              onclick="onClick(this)" class="w3-hover-opacity">
-           </div> 
+           </div>
+           <div class="w3-container w3-third">
+            <img src="assets/arc/4.jpg" style="width:100%;cursor:pointer" 
+                 onclick="onClick(this)" class="w3-hover-opacity">
+               </div>
+               <div class="w3-container w3-third">
+                <img src="assets/arc/5.jpg" style="width:100%;cursor:pointer" 
+                     onclick="onClick(this)" class="w3-hover-opacity">
+                   </div>    
+
     </div>
- <hr>
- <h2>Materials and resources</h2>
-      <h3>Hydra video tutorials [ENG & ESP]</h3>
-      <div class="video-container">
-        <iframe 
-          src="https://www.youtube.com/embed/videoseries?si=tT9scd4YMPTxvgGZ&amp;list=PL82ekYXUXbcSDipIPs6Df1YpG6s68WJRu" 
-          title="YouTube video player" 
-          frameborder="0" 
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-          referrerpolicy="strict-origin-when-cross-origin" 
-          allowfullscreen>
-        </iframe>
+ <p>Pictures by Florian Duerkopp
+</p>
+    </div>
+
+
+    </div>
+    <div style="background-color: rgba(0, 0, 0, 0.5);">
+    <p>Screens are nowadays and everyday more part of our daily lives and even connected somehow to our bodies. We touch screens, communicate and feel through screens.
+      Screens can also be flashlights, visuals in the night or kiosk publicity.
+      ‘You make me screen’ it’s a hacky way to show as a mirror that you are also part of the screen. In the sense that narrative and perception is not linear, we go and we see and we share what we feel. Screens as new windows that can go beyond what is a routine. To create universes (chaos and cosmos) that can open new and multiple ways to see and understand the world.
+      </p>
+  <p>Technical specifications:
+    Raspberry pi, led panels, Python, opencv, chains, ELwire.</p>
+</div>
+    <div id="modal01" class="w3-modal" onclick="this.style.display='none'">
+      <span class="w3-button w3-hover-red w3-xlarge w3-display-topright">&times;</span>
+      <div class="w3-modal-content w3-animate-zoom">
+        <img id="img01" style="width:100%">
       </div>
-
-      <a href="https://ciberpoesia.netlify.app/" target="_blank"><h3>Ciberpoesia hydra + p5js sketches</h3></a>
-      <a href="https://sound-days-hydra-workshop.netlify.app/" target="_blank"><h3>Sound Days Hydra Virtual Exhibition</h3></a>
-      <a href="https://ccfest-2021-glitchme.glitch.me/" target="_blank"><h3>CC Fest Hydra workshop with Naoto Hieda</h3></a>
-
     </div>
-   
 
+
+  <p><a href="work.html">⬅back</a></p>  
   
 
 
@@ -123,13 +114,6 @@
 </div>
 
 
-
-<!-- Footer -->
-<footer class="w3-container w3-padding-64 w3-center w3-opacity w3-display-bottommiddle">
-  <div class="w3-display-bottommiddle w3-margin-top">  
-    
-    </div>
-</footer>
 
 <script>
 function onClick(element) {
@@ -160,6 +144,7 @@ src(o0)
 render(o1)
 
 setResolution(15,15)
+
 </script>
 
 </body>

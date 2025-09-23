@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>flor de fuego</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="assets/Px437_IBM_XGA-AI_12x23.ttf">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src="https://unpkg.com/hydra-synth"></script>
+</head>
+<body>
+
+  <!-- Navbar -->
+<div class="w3-center">
+  <div class="w3-bar w3-white w3-xxxlarge" style="background-color: rgba(0, 0, 0, 0) !important; color:white !important; text-shadow:1px 1px 0 #444">
+  <!-- <a href="index.html" class="w3-bar-item w3-button w3-padding-large w3-black" style="background-color: rgba(0, 0, 0, 0) !important;">fdf</a>-->
+    <a href="bio.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-black">about</a>
+    <a href="work.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-dark-gray">projects</a>
+    <a href="contact.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-light-gray">contact</a>
+  </div>
+</div>
+<div class="w3-bar w3-align-center w3-hide-large" style="background-color: rgba(255, 255, 255, 0.1) !important; color:white !important; text-shadow:1px 1px 0 #444">
+    <a href="bio.html" class="w3-bar-item w3-button w3-padding-large">about</a>
+    <a href="work.html" class="w3-bar-item w3-button w3-padding-large">projects</a>
+    <a href="contact.html" class="w3-bar-item w3-button w3-padding-large">contact</a>
+</div>
+
+
+<!-- Header -->
+<canvas id="myCanvas"></canvas> 
+
+<!-- First Grid -->
+<div class="w3-row-padding w3-padding-64 w3-container w3-center">
+  <div class="w3-content  w3-padding w3-text-white" style="text-shadow:1px 1px 0 #444">
+
+   
+   <div class="w3-display-container">
+    <h1>Live Visuals for Nam June Paik: I Expose the Music. vernissage.</h1>
+    <h2>Museum Ostwall - Dortmunder U. Dortmund, Germany</h2>
+    <p>The idea behind this project is to combine digital and analogue technologies to create a hybrid visual performance/installation. Using analogue and digital video cameras, an oscilloscope and a laptop, input signals are switched on and off, creating various feedback loops.
+
+As a visual reference to Nam June Paik's work and analogue video synthesis, the project was created as part of the opening of the Paik exhibition at the Museum Ostwall, where a similar setup was used for live visualisations.
+
+All media are interconnected and linked via live coding, with the code for image generation being written in real time. In the future, additional oscilloscopes will be connected to create a multimedia art installation.
+
+Algorithms are increasingly determining our everyday lives. The intention of this installation is to use them for creative and non-normative use of media, as Paik did decades ago with analogue technology such as televisions and cameras.</p>
+    <div class="w3-container">
+       
+    <div class="w3-row-padding">
+      <div class="w3-container">
+    <img src="assets/namJunePaik/oscilloscope.jpg" style="width:100%;cursor:pointer" 
+        onclick="onClick(this)" class="w3-hover-opacity">
+      </div>
+
+    </div>
+
+    </div>
+
+    <div class="w3-container w3-padding">
+ 
+   <div class="w3-container w3-half">
+    <img src="assets/namJunePaik/oscilloscope3.jpg" style="width:100%;cursor:pointer" 
+             onclick="onClick(this)" class="w3-hover-opacity">
+           </div>
+
+    <div class="w3-container w3-half">
+      <img src="assets/namJunePaik/oscilloscope4.jpg" style="width:100%;cursor:pointer" 
+               onclick="onClick(this)" class="w3-hover-opacity">
+             </div>
+             </div>
+    </div>
+
+    <div id="modal01" class="w3-modal" onclick="this.style.display='none'">
+      <span class="w3-button w3-hover-red w3-xlarge w3-display-topright">&times;</span>
+      <div class="w3-modal-content w3-animate-zoom">
+        <img id="img01" style="width:100%">
+      </div>  
+    </div>
+    
+        <div class="w3-container w3-center w3-margin-left">
+      <video controls muted style="width: 600px; height: auto;  max-width: 100%; display: block;"><source src="assets/namJunePaik/20230316_195826.mp4" type="video/mp4"></video>
+    </div>
+
+
+
+    <p><a href="work.html">⬅back</a></p>  
+  
+
+
+   
+  </div>
+</div>
+
+
+
+
+
+<script>
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+}
+
+
+// create a new hydra-synth instance
+var hydra = new Hydra({ 
+canvas: document.getElementById("myCanvas"),
+detectAudio: false,
+width: window.innerWidth,
+height: window.innerHeight
+});
+
+
+gradient(0.1)
+.saturate(0)
+.out()
+src(o0)
+.posterize(12)
+.pixelate(50,100)
+.modulate(shape(999).repeat(200,200).scrollY(0,-0.1))
+.mult(noise(300,2).thresh(),0.1)
+.blend(solid(),0.1).out(o1)
+
+render(o1)
+
+setResolution(15,15)
+
+</script>
+
+</body>
+</html>

@@ -38,16 +38,12 @@
 
 
 <!-- First Grid -->
-<div class="w3-row-padding w3-padding-64 w3-container w3-center">
-   <a href="bio.html" style="text-decoration: none;">
-   <h1 id="glow" class="w3-text-white" style="font-size:10vw !important; ">flor de fuego</h1>  
-   </a>
+<div class="w3-row-padding w3-padding-16 w3-container w3-center">
+  <img src="assets/contact.png" alt="portrait" style="width:80%; max-width:400px;  border-radius: 50%;">
   <div class="w3-content w3-center w3-text-white">
-
-   <h3 style="font-style: italic; text-shadow:1px 1px 0 #444">digital craftwork | creative coding | live visuals | live coding</h3>   
-  </div>
-</div>
-
+<p class="w3-text-white">Picture by Karlis Volkovskis</p>
+   <h1  class="w3-text-white" style="font-size:4vw !important; ">floralonsoflor[at]gmail[dot]com</h1>  
+   </div>
 
 </div>
 <!-- Footer -->
@@ -60,8 +56,8 @@
 </footer>
 
 
-<script>
 
+<script>
 
 // create a new hydra-synth instance
 var hydra = new Hydra({ 
@@ -72,29 +68,24 @@ height: window.innerHeight
 });
 
 
-gradient(0.1)
-.hue(0.1)
-.repeat(5,5,()=>time*0.2)
-.saturate(2)
+noise(100)
 .layer(osc().mask(noise(1).thresh(0.5,0)))
-.layer(src(o0).modulateHue(src(o0),10).mask(noise(2,0.2).thresh(0.5,0)))
-.modulateRotate(osc(10),()=>mouse.x/innerWidth*2)
-.scrollY(()=>mouse.y/innerHeight)
+.color(0.5,0.4,1)
+//.modulateRotate(osc(10))
 .out()
 src(o0)
 .posterize(12)
-.pixelate(50,100)
+.pixelate(50,10)
 .modulate(shape(999).repeat(200,200).scrollY(0,-0.1))
-.hue(()=>time*0.1)
 .mult(noise(300,2).thresh(),0.1)
 .blend(solid(),0.1)
-.layer(src(o1).modulateHue(src(o1).scale(2),2).saturate(1.1).mask(noise(3).thresh(0.5,0).pixelate(10,10)))
+.layer(osc(60,0.1,0.5).modulateRotate(osc(10),2).mask(osc(5).thresh(0.5,0).modulateRotate(osc(3))))
 .out(o1)
 
 render(o1)
 
-//setResolution(innerWidth,innerHeight)
-setResolution(30,15)
+setResolution(15,15)
+
 </script>
 
 </body>

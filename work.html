@@ -1,165 +1,224 @@
-
 <!DOCTYPE html>
-<html>
-  
-<title>Flor de Fuego</title>
+<html lang="en">
+<head>
+<title>flor de fuego</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/3/w3.css">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
-<link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="assets/Px437_IBM_XGA-AI_12x23.ttf">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src="https://unpkg.com/hydra-synth"></script>
+</head>
+<style>
+  /* Add the hover effect */
+.hover-image {
+  position: relative;
+  display: block;
+  transition: 0.3s ease-in-out;
+}
 
-<!-- Navigation -->
-<nav class="w3-bar w3-black w3-top">
-  <a href="index.html" class="w3-button w3-bar-item">Flor de Fuego</a>
-  <a href="work.html" class="w3-button w3-bar-item">Work</a>
-  <a href="bio_eng.html" class="w3-button w3-bar-item">Bio</a>
-  <a href="workshopsEn.html" class="w3-button w3-bar-item">Workshops</a>
-  <a href="news.html" class="w3-button w3-bar-item">Blog</a>
-  <nav class="w3-right"> 
-  <a href="index.html" class="w3-button w3-bar-item">ESP</a>
-  <a href="index_eng.html" class="w3-button w3-bar-item">ENG</a>
-</nav>
-</nav>
+.hover-image::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(72, 0, 255);
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
 
-<section class="w3-container w3-center w3-content" id="Video" style="max-width:1000px">
-  <h1 class="w3-wide w3-padding-64">work</h1>
-<!-- First Grid-->
-<div class="w3-row-padding w3-padding-16 w3-center" id="net-art">
-  <div class="w3-third">
-    <img src="work_images/desembocadura.png" alt="Desembocadura" style="width:100%">
-    <a href="https://desembocadura.glitch.me/" target="_blank">
-    <h4>Desembocadura, instalacion en webVR</h4>
-    </a>
-   <p>Desembocadura , la boca del río, vertiente al mar. Voy dejando fragmentos digitales de recuerdos en un éter virtual. Sedimentos glitcheados rebalsan o se hunden.</p> 
-  </div>
-  <div class="w3-third">
-  <img src="work_images/lol-cam.png"  alt="lol-cam" style="width:100%">
-  <a href="https://lol-cam.glitch.me/" target="_blank">
-    <h4>lol-cam</h4>
-  </a> 
-    <p>webvr cam installation</p>
-  </div>
-  <div class="w3-third">
-  <img src="work_images/hydra-slit-scan (2).jpg" alt="hydra-slit-scan"  style="width:100%">
-  <a href="https://hydra-slit-scan.glitch.me/" target="_blank">
-    <h4>Hydra slit-scan camera</h4>
-   </a>
-  <p>Hecho con Hydra de Olivia Jack por Flor de Fuego para FEID Facultad de Artes UNLP</p>
-  </div>
+.hover-image:hover::after {
+  opacity: 0.5; /* Adjust this value for filter intensity */
+}
 
-  <div class="w3-third">
-   <img src="work_images/image_2021-06-14_17-36-25.png" alt="de-noche" style="width:100%">
-   <a href="https://de-noche.glitch.me/" target="_blank">
-      <h4>De-noche</h4>
-   </a> 
-     <p>web-ambient</p>
-   </div>
-  </div>
-  <!-- Second Grid-->
+</style>
+<body>
 
-  <div class="w3-row-padding w3-padding-16 w3-center" id="video">
-
-  <div class="w3-quarter"> 
-    <iframe style="width:100%" src="https://www.youtube.com/embed/bEElvMyd65w" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-    <h3>Consuelo - [Yecto + Flor de Fuego]</h3>
-    <p>Audiovisual realizado en colaboración con Yecto para el festival Dérapage 2021, Montreal.</p>
-  </div>
-
-  <div class="w3-quarter"> 
-  <iframe style="width:100%" src="https://www.youtube.com/embed/YO79Z6k9INw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-  <p>PhillyAV Monthly Quarterly Broadcast // Wine Dive with visuals by Flor de Fuego and Music by Pamela Spark</p> 
-  </div> 
-
-  <div class="w3-quarter">
-  <iframe style="width:100%" src="https://www.youtube.com/embed/zgalzhErl-k" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-  <h4>Live coding performance para Toplap first Transnodal live code Stream 21/02</h4> 
-  </div>
-
-  <div class="w3-quarter">
-    <iframe style="width:100%" src="https://www.youtube.com/embed/tTurYWVxmdk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-    <h4>Ambient [Joanne Armitage + Flor de Fuego]</h4>
+<!-- Navbar -->
+<div class="w3-center">
+  <div class="w3-bar w3-white w3-xxxlarge" style="background-color: rgba(0, 0, 0, 0) !important; color:white !important; text-shadow:1px 1px 0 #444">
+  <!-- <a href="index.html" class="w3-bar-item w3-button w3-padding-large w3-black" style="background-color: rgba(0, 0, 0, 0) !important;">fdf</a>-->
+    <a href="bio.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-black">about</a>
+    <a href="work.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-dark-gray">projects</a>
+    <a href="contact.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-light-gray">contact</a>
   </div>
 </div>
-<div class="w3-row-padding w3-padding-16 w3-center" id="video_2">
+<div class="w3-bar w3-align-center w3-hide-large" style="background-color: rgba(255, 255, 255, 0.1) !important; color:white !important; text-shadow:1px 1px 0 #444">
+    <a href="bio.html" class="w3-bar-item w3-button w3-padding-large">about</a>
+    <a href="work.html" class="w3-bar-item w3-button w3-padding-large">projects</a>
+    <a href="contact.html" class="w3-bar-item w3-button w3-padding-large">contact</a>
+</div>
+
+<!-- Header -->
+<canvas id="myCanvas"></canvas> 
+
+
+<!-- First Grid -->
+<div class="w3-row-padding w3-padding-64 w3-container w3-center w3-text-white" style="text-shadow:1px 1px 0 #444">
+
+<div class="w3-margin-top">
+
   <div class="w3-quarter">
-    <iframe style="width:100%" src="https://www.youtube.com/embed/wYDY1oC70Qw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-    <h4>III - L'Impératrice</h4>
-  </div>
+      <h1>Performances</h1>
 
-  <div class="w3-quarter">
-    <iframe style="width:100%" src="https://www.youtube.com/embed/8rS6s6DAdOM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-    <h4>FINDE Música: Showcase Amplify: Flor de fuego</h4>
-    <p>set audiovisual de live coding con microsamples de canciones de músicas mujeres latinas</p>
-  </div>
-  <div class="w3-quarter">
-    <a href="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2FMUTEKArgentina%2Fvideos%2F444121066190263%2F&show_text=0&width=560" target="_blank">  
-    <img src="work_images/mutek.jpg" alt="Mutek_2019" style="width:100%">
-  </a>
-    <h4>Visuales de live coding para Whisky, Palacio Alsina de Buenos Aires-MUTEK 2019.</h4>
-    <p>Dibujando con codigo en tiempo real</p>
-  </div>
-</div>
-</div>
-</div>  
-
-<h3>Proyectos colaborativos</h3>  
-<div class="w3-container w3-half">
-  <a href="https://c0d3-p03try.neocities.org/" target="_blank">
-<h3>c0d3 p03try</h3>
- </a>
-<img src="image github/code2.jpeg" style="width:100%">
-<p>c0d3_p03try = ["flor de fuego", "rapo"]</p>
-</div>
-<div class="w3-container w3-half">
-<a href="https://gmogm.glitch.me/" target="_blank">
-<h3>GlitchMe</h3>
-</a>
-<img src="work_images/9b37fb18-5c29-4916-b8ad-624764fa77cb_shot0012.png" style="width:120%">
-<p>['Naoto Hieda' , 'Flor de Fuego']</p>
-
-</div>
+          <div class="w3-tooltip" style="position: relative; overflow: hidden;">
+           <i> <h4 class="w3-text" style="position: absolute; left: 0; bottom: 18px; z-index: 10;">execute| Live-Concert| Toplap Düsseldorf</h4></i>
+            <a href="execute.html" class="hover-image" >
+              <img 
+                src="assets/performances/execute.jpg" 
+                style="width: 100%; cursor: pointer;" 
+                class="hover-image"
+              >
+              </a>
+              </div> 
+   
+        <div class="w3-tooltip" style="position: relative; overflow: hidden;">
+         <i> <h4 class="w3-text" style="position: absolute; left: 0; bottom: 18px; z-index: 10;">Other performances</h4></i>
+          <a href="otherPerformances.html" class="hover-image" >
+            <img 
+              src="assets/Algomystica/DSC08014.jpg" 
+              style="width: 100%; cursor: pointer;" 
+              class="hover-image"
+            >
+            </a>
+            </div> 
+            </div>
 
 
-
-<!--   
-<section class="w3-container w3-center w3-content" style="max-width:1000px">
- <h3 class="w3-wide w3-padding-32">FINDE Música: Showcase Amplify: Flor de fuego</h3>
- <div align="center">
-   <iframe width="640" height="360" src="https://www.youtube.com/embed/8rS6s6DAdOM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-  </div>
-  
-  <h3 class="w3-wide w3-padding-32">Diving Glitch</h3>
- <div align="center">
-<iframe width="640" height="360" src="https://www.youtube.com/embed/z6sC_BVTXdE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-   </div>
-  
-  <h3 class="w3-wide w3-padding-32">Live Coding Visuals para Whisky en el Palacio Alsina de Buenos Aires-MUTEK 2019</h3>
- <div align="center">
- <iframe src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2FMUTEKArgentina%2Fvideos%2F444121066190263%2F&show_text=0&width=560" width="640" height="360" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allowFullScreen="true"></iframe>
-   </div>
- <h3 class="w3-wide w3-padding-64">III - L'Impératrice</h3>
-
-  <iframe width="640" height="360" src="https://www.youtube.com/embed/wYDY1oC70Qw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-  <p class="w3-justify w3-padding-16 w3-medium" style="max-width:1000px">
+     <div class="w3-quarter">     
+      <h1>Exhibitions</h1>
+   
+          <div class="w3-tooltip" style="position: relative; overflow: hidden;">
+           <i> <h4 class="w3-text" style="position: absolute; left: 0; bottom: 18px; z-index: 10;">ARC Gallery</h4></i>
+            <a href="arc.html" class="hover-image" >
+              <img 
+                src="assets/arc/1.jpg" 
+                style="width: 100%; cursor: pointer;" 
+                class="hover-image"
+              >
+              </a>
+              </div>         
+  <!--
+          <div class="w3-tooltip" style="position: relative; overflow: hidden;">
+           <i> <h4 class="w3-text" style="position: absolute; left: 0; bottom: 18px; z-index: 10;">Lienzo Cuántico</h4></i>
+            <a href="arc.html" class="hover-image" >
+              <img 
+                src="assets/lienzo.jpg" 
+                style="width: 100%; cursor: pointer;" 
+                class="hover-image"
+              >
+              </a>
+              </div>  -->  
     
-    <h3 class="w3-wide w3-padding-64">Live Coding en el Planetario de Buenos Aires 13-06-19</h3>
-<iframe width="640" height="360" src="https://www.youtube.com/embed/h5rZwS680OM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-<h3 class="w3-wide w3-padding-64">caos</h3>
-<iframe width="640" height="360" src="https://www.youtube.com/embed/tuTvyUqBPDs" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-  
-</section>
-  -->
-<!-- Footer -->
-<footer class="w3-container w3-padding-64 w3-center w3-black w3-xlarge">
+          <div class="w3-tooltip" style="position: relative; overflow: hidden;">
+           <i> <h4 class="w3-text" style="position: absolute; left: 0; bottom: 18px; z-index: 10;">Parameter|Generative Arts Fair</h4></i>
+            <a href="adela.html" class="hover-image" >
+              <img 
+                src="assets/adela.jpg" 
+                style="width: 100%; cursor: pointer;" 
+                class="hover-image"
+              >
+              </a>
+              </div> 
+              </div>
 
-  <a href="https://bandcamp.com/flordefuego"><i class="fa fa-bandcamp"></i></a>
-  <a href="https://www.instagram.com/flordefuega/"><i class="fa fa-instagram"></i></a>
-  <a href="https://twitter.com/flordefuego4"><i class="fa fa-twitter"></i></a>
-  <a href="https://github.com/flordefuego/"><i class="fa fa-github"></i></a>
-</footer>
+ <div class="w3-quarter">
+
+    <h1>Collaborations</h1>
+
+
+  
+        <div class="w3-tooltip" style="position: relative; overflow: hidden;">
+         <i> <h4 class="w3-text" style="position: absolute; left: 0; bottom: 18px; z-index: 10;">Museums Night Dortmunder U</h4></i>
+          <a href="museumsNacht.html" class="hover-image" >
+            <img 
+              src="assets/dortmunderU/mapping.png" 
+              style="width: 100%; cursor: pointer;" 
+              class="hover-image"
+            >
+            </a>
+            </div>        
+      
+
+        <div class="w3-tooltip" style="position: relative; overflow: hidden;">
+         <i> <h4 class="w3-text" style="position: absolute; left: 0; bottom: 18px; z-index: 10;">ECLAT|Poetry Affairs_sl_&gl_de</h4></i>
+          <a href="eclat.html" class="hover-image" >
+            <img 
+              src="assets/poetry/Poetry Affairs_sl_&gl_de_c_Martin Sigmund_SIG1073.jpg" 
+              style="width: 100%; cursor: pointer;" 
+              class="hover-image"
+            >
+            </a>
+            </div>
+            
+        <div class="w3-tooltip" style="position: relative; overflow: hidden;">
+         <i> <h4 class="w3-text" style="position: absolute; left: 0; bottom: 18px; z-index: 10;">Live Visuals - Nam June Paik</h4></i>
+          <a href="namJunePaik.html" class="hover-image" >
+            <img 
+              src="assets/namJunePaik/oscilloscope2.jpg" 
+              style="width: 100%; cursor: pointer;" 
+              class="hover-image"
+            >
+            </a>
+            </div>    
+            
+
+            </div>
+
+             <div class="w3-quarter">
+  
+  <h1>Workshops</h1>
+      <div class="w3-tooltip" style="position: relative; overflow: hidden;">
+       <i> <h4 class="w3-text" style="position: absolute; left: 0; bottom: 18px; z-index: 10;">More info/ materials and resources</h4></i>
+        <a href="workshops.html" class="hover-image" >
+          <img 
+            src="assets/workshops/54208981746_be459ea657_c.jpg" 
+            style="width: 100%; cursor: pointer;" 
+            class="hover-image"
+          >
+          </a>
+          </div>     
+          </div>
+</div>
+
+</div>
+
+
+
+<script>
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+}
+
+
+
+// create a new hydra-synth instance
+var hydra = new Hydra({ 
+canvas: document.getElementById("myCanvas"),
+detectAudio: false,
+width: window.innerWidth,
+height: window.innerHeight
+});
+
+
+gradient(0.1)
+.saturate(0)
+.out()
+src(o0)
+.posterize(12)
+.pixelate(50,100)
+.modulate(shape(999).repeat(200,200).scrollY(0,-0.1))
+.mult(noise(300,2).thresh(),0.1)
+.blend(solid(),0.1).out(o1)
+
+render(o1)
+
+setResolution(30,15)
+</script>
 
 </body>
 </html>

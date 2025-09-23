@@ -1,124 +1,186 @@
 <!DOCTYPE html>
-<html>
-  
-<title>Flor de Fuego</title>
+<html lang="en">
+<head>
+<title>flor de fuego</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/3/w3.css">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
-<link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="assets/Px437_IBM_XGA-AI_12x23.ttf">
+<script src="https://unpkg.com/hydra-synth"></script>
+</head>
 
-<!-- Navigation -->
-<nav class="w3-bar w3-black w3-top">
-  <a href="index.html" class="w3-button w3-bar-item">Flor de Fuego</a>
-  <a href="obra.html" class="w3-button w3-bar-item">Obra</a>
-  <a href="bio.html" class="w3-button w3-bar-item">Bio</a>
-  <a href="workshops.html" class="w3-button w3-bar-item">Workshops</a>
-  <a href="noticias.html" class="w3-button w3-bar-item">Blog</a>
-  <nav class="w3-right"> 
-  <a href="index.html" class="w3-button w3-bar-item">ESP</a>
-  <a href="index_eng.html" class="w3-button w3-bar-item">ENG</a>
-</nav>
-</nav>
+<body>
+
+<!-- Navbar -->
+<div class="w3-center">
+  <div class="w3-bar w3-white w3-xxxlarge" style="background-color: rgba(0, 0, 0, 0) !important; color:white !important; text-shadow:1px 1px 0 #444">
+  <!-- <a href="index.html" class="w3-bar-item w3-button w3-padding-large w3-black" style="background-color: rgba(0, 0, 0, 0) !important;">fdf</a>-->
+    <a href="index.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-black">fdf</a>
+    <a href="work.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-dark-gray">projects</a>
+    <a href="contact.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-light-gray">contact</a>
+  </div>
+</div>
+<div class="w3-bar w3-align-center w3-hide-large" style="background-color: rgba(255, 255, 255, 0.1) !important; color:white !important; text-shadow:1px 1px 0 #444">
+    <a href="index.html" class="w3-bar-item w3-button w3-padding-large">fdf</a>
+    <a href="work.html" class="w3-bar-item w3-button w3-padding-large">projects</a>
+    <a href="contact.html" class="w3-bar-item w3-button w3-padding-large">contact</a>
+</div>
+
 <!-- Header -->
+<canvas id="myCanvas"></canvas> 
+
+
+<!-- First Grid -->
   
-<header class="w3-display-container w3-content w3-wide" style="max-width:1500px;" id="inicio">
-  <section class="w3-container w3-center w3-content" id="inicio" style="max-width:1000px">
-    <br>
-    <h1>Flor de Fuego</h1>
-  </header>
-<section class="w3-container w3-center w3-content" id="inicio" style="max-width:1000px">
+<div class="w3-row-padding w3-padding-32 w3-container w3-center">
+<img src="assets/128 DSC00021_KarlisVolkovskisFoto_Cut.png" alt="portrait" style="width:80%; max-width:400px;  border-radius: 50%;">
+<p class="w3-text-white">Picture by Karlis Volkovskis</p>
+<br>  
+<div class="w3-content w3-center w3-text-white" style=" text-shadow:1px 1px 0 #444; text-align:left; background-color: rgba(0, 0, 0, 0.8); padding: 1px; border-radius: 15px;">
+<p>Flor de Fuego is a digital-craft artist who primarily works with programming and live coding to create performative experiences. Her research explores concepts such as the body, space, code, and the chaos-cosmos. She has participated in several international festivals across Europe and the Americas, both individually and in collaboration with other artists. She holds a Bachelor's degree in Fine Arts from the National University of La Plata, Argentina.
+    Education plays a fundamental role in her work. Flor is actively involved in the live coding community and has contributed to the International Conference on Live Coding (ICLC) as a paper reviewer. She is also an active community collaborator for Hydra, a live coding browser-based software developed by Olivia Jack.</p>
+    <p>
+    She is an alumni from the Akademie für Theater und Digitalität and part of Koproduktionslabor team, an artistic media lab that works in co-production with artists and the Akademie as well as KiU Lab from Dortmunder U (Dortmund, Germany).   
+ </p>
+  </div>
+</div>
+<hr>
+<div class="w3-row-padding w3-text-white w3-padding-16 w3-container w3-center">
+<h1 style="font-style: italic; font-size:3vw !important; text-shadow:1px 1px 0 #444;">upcoming events</h1>
 
-<img  class="retrato" src="image github/autorretrato_6_2.jpg">
+<ul class="w3-ul text-shadow:1px 1px 0 #444; text-align:left;">
+  <div class="w3-center" style="text-shadow:1px 1px 0 #444; text-align:left;">
+  <h3>2025</h3>
+  <div class="w3-deep-orange">
+  <li>Live coding performance - Detmold - November 29th- more info tba</li>
+  <li>Live coding performance w/. Nesso - Interations Festival - Den Haag - November 27th- more info tba</li>
+  <li>Live coding performance w/. Nesso - Next Level Festival -Dortmund - November - more info tba</li>
+  <li>Live coding performance - Minden - November 9th - more info tba</li>
+  <li>hydra workshop- Minden - November 8th - more info tba</li>
+   <li>Live Coding Performance  - Cologne - November 1st - more info tba</li>
+   </div>
+   <div style="background-color: rgba(0, 0, 0, 0.5);">
+  <li>Code Poetry Retraite (workshop)  - Creative Coding Utrecht|Netherlands - June 14th</li>
+  <li>Workshop and live coding performance at Sound Days festival. Liepāja|Latvia - April 22nd-26th</li>
+  <li>Hydra workshop and live coding performance at Overview art gallery. Liège|Belgium - March 29th</li>
+  <li>AV performance with Nesso at Shape Shifters - Creative Coding Utrecht|Netherlands - March 1st</li>
+  <li>Getting lost in the paradigm of the Univers(e)<s>al</s>. Lecture part of: Algorithmophagía. Eat the others or swallow yourself.
+    Wed 29 Jan 2025. (part of seminar: Algorithmic Acoustics. Epistemische Medien
+    Form und Formalismus. Klang und Realität)
+    Alex McLean, Flor de Fuego, Julian Rohrhuber.</li>
+  <h2>past events</h2>
+  <h3>2024</h3>
+ <li>Hydra workshop and live coding audiovisual performance at Chaos Communication Congress. Hamburg, Germany.</li> 
+<li>IDLE Data Transitions with Blaž Pavlica (talk and perfomance) for Piksel Festival for kunst og fri teknologi
+  Geo-v(oid)(0)latility(∞)politics. Bergen, Norway. November 2024</li>
+<li>Hydra live coding workshop at Iterations Creative Coding Symposium, Design Museum Den Bosch. Netherlands. November. </li>
+<li>Artist in Residence at Creative Coding Utrecht. (Utrecht, Netherlands. November 2024)</li>
+<li>Live AV performance at DIY Synth & Sound Art Festival. (Düsseldorf, Germany. October 2024)</li>
+<li>Hydra workshop at DIY Synth & Sound Art Festival. (Düsseldorf, Germany. October 2024)</li>
+<li>Fellows last meeting from PlayOn! Project. Coordinated by Akademie für Theater und Digitalität and PlayOn! European network. (Tallinn, Estonia. September 2024)</li>
+<li>Live performance at Futur AAA, festival for patterns and irritations. (Zwickau, Germany. 2024)</li>
+<li>Hydra (live coding visuals) workshop for kids at Fridalen Skole. (Bergen, Norway. June 2024)</li>
+<li>Live performance at Studio 207 - Satellite event from the International Conference on Live Coding in Shanghai. (Bergen, Norway. June 2024)</li>
+<li>Contributor at Open Source Arts Contributors Conference 2024. (Denver, Colorado. April 2024)</li>
+<li>Live audiovisual performance at DIY Synth and Sound Art Festival. (Düsseldorf, Germany. February 2024)</li>
+<li>Live visuals and lights for “sl*p and gl*de,, composed by Georgia Koumara. Poetry Affairs at ECLAT Festival Neue Musik. (Stuttgart, Germany. January 2024)</li>
+
+  <h3>2023</h3>
+  <li>EFFEA-IDLE Residency (European Festivals Fund for Emerging Artists). Piksel Festival. (Bergen, Norway. September-November 2023)</li>
+  <li>Exhibition at Parameter Generative Arts Fair and live performance ADELA Festival (International Festival of Generative Arts). (Ljubljana, Slovenia. November 2023).</li>
+  <li>Masterclass for Buam (Multimedial Bienal) organised by University San Francisco-USFQ. (Quito, Ecuador. September 2023)</li>
+  <li>Countdown mapping projection and content for mapping projection and storytelling in collaboration with Storylab kiU for Dortmunder U Museumsnacht. (Dortmund, Germany. September 2023)</li>
+  <li>Fulldome performance with Timo Hoogland, Henning Pszczola and Azziza El-Yabadri for Dortmunder U Museumsnacht. (Dortmund, Germany. September 2023)</li>
+  <li>Mapping at NRW Forum for Beyond Fame exhibition’s opening and 25th NRW Forum Anniversary. (Düsseldorf, Germany. August 2023)</li>
+  <li>Visuals for Isle of live coding at museum’s night at ZKM. (Karlsruhe, Germany. August 2023)</li>
+  <li>AV performance for Execute - satellite event from ICLC. (Düsseldorf, Germany. July 2023)</li>
+  <li>Live Visuals for Dour Festival. (Dour, Belgium. July 2023)</li>
+  <li>Workshop and AV performance with RAM Laboratoria. Numun Fund. (Mexico City, Mexico. May 2023)</li>
+  <li>AV performance in collaboration with Dan Gorelick at Tivoli for ICLC 2023. (Utrecht, Netherlands. April 2023)</li>
+  <li>AV performance in collaboration with Francesco Corvi (Nesso) for ICLC satellite multi-channel concert in Sonology. (Den Haag, Netherlands. April 2023)</li>
+  <li>Visuals at Nam June Paik exhibition ‘I expose the music’ opening. (Dortmund, Germany. March 2023)</li>
+  <li>Visual performance at Bienal Ciutat I Ciencia. Toplap Barcelona. (February 2023)</li>
+  <li>Lecture at Academy of Arts and Design Basel - CoCreate Coding week. (Basel, Switzerland. February 2023)</li>
+  <li>Exhibition of “You make me screen” at Arc Gallery- Tresor Dortmund. (Dortmund, Germany. December 2023)</li>
+  
+  <h3>2022</h3>
+<li>“In situ: Hacking with esoteric programming” research/production project for Fundus Theater in the context of the symposium ILLUMINI – FORSCHUNGSZENTRUM FÜR DIGITALE DINGE. (Hamburg, December, 2022)</li>
+<li>AV performance at Art Machines festival. (Utrecht, Netherlands. December 2022)</li>
+<li>Artist Mentoring for the program “ARTEscénicas + digitalidad” Goethe Institut Chile. (December 2022- May2023)</li>
+<li>Visual collaboration with the project “The contour of stars” for the composer Emmanuel Witzhum and Ensemble Modern at ZKM. (Karlsruhe, Germany. November 2022)</li>
+<li>AV Performance for Algorave at Digital Art Zurich festival. Zurich, Switzerland. October 2022)</li>
+<li>Technical video assistance for Queen of Hearts opera at Gare du Nord. (Basel, Switzerland. October 2022)</li>
+<li>AV performance at Execute - 7. Live coding algorithmic music. Düsseldorf, Germany. October 2022)</li>
+<li>AV performance at FARM for the ICFP conference. (Ljubljana, Slovenia. September 2022).</li>
+<li>AV Performance for On-the-fly final event. Hangar, Barcelona. (July, 2022)</li>
+
+  <li>Fellowship with Naoto Hieda at the Academy for Theater and Digitality. (Dortmund, Germany. February-June 2022)</li>
+  <h3>2021</h3>
+  <li>Visual Panel talk with Olivia Jack  for International Conference on Live Coding 2021. Valdivia, Chile. </li>
+  <li>Hydra introductory workshop en colaboración con Naoto Hieda at CC Fest (Processing Foundation).</li>
+  <li>Amplify Collaboration Fund Recipients con Edy Fung.</li>
+  <li>MUTEK ES|AR Symposium "Promesas y desafios de la tecnologia frente al genero".</li>
+  <li> "("."). Un punto, un principio" AV performance, MUTEK ES|AR 2021.</li>
+  <h3>2020</h3>
+  <li>c0d3 p03try performance at ICLC (International Conference on Live Coding), University of Limerick, Irlanda.</li>
+  <li>c0de p03try, live AV performance for Pumpumyachkan Festival, Asimtria. Ayacucho, Perú. </li>
+  <li>Jam [c0d3 p03try + Jimena Gonzalez (MX)] en "Literatura expandida. Textualidades en contingencia", organizado por Casa del Lago UNAM y Catedra Max Aub.</li>
+  <li>Ephemeris time, AV Explorations at scanlines.xyz NY/BA.</li>
+  <li>'Fractal' ,live coding AV performance at Mutek Montreal, Amplify DAI and British Council. </li>
+  <li>'Nadar', virtual exhibition at Casa del Lago, UNAM, Mexico.</li>
+  <li>Let's make a Giant Feedback Loop on the internet, performance with Andrei Jay</li>
+  <li> Somerset House Studio Amplify DAI, virtual residency. UK.</li>
+  <li>“Global Broadcast For a Total Eclipse: 2’ 10” ”, performance with Nicky Assmann, Rebecca Cummins, and Eric Parren.</li>
+  <li>"GlitchMe" performance-talk with Naoto Hieda at CODAME festival, California, US.</li>
+  <h3>2019</h3>
+  <li>Fulldome live coding performance with Iris Saladino. Festival Domo Lleno 2019 en Bogotá, Colombia.</li>
+  <li>Live coding performance with Iris Saladino at FemITconf. Buenos Aires, Argentina.</li>
+  <li>Live Coding for Museums night with CliC (colectivo de live coders). Facultad de Exactas, University of Bunos Aires. Buenos Aires, Argentina</li>
+  <li>Live coding visuals for Whisky (music duo) at MUTEK AR 2019. Buenos Aires, Argentina</li>
+  <li>AV in Amsterdam with C0d3 p03try for JSNation, international JavaScript conference. Amsterdam, Netherlands</li>
+  <li>Hydra talk at FLISOL LA PLATA, Informatics faculty Universidad Nacional de La Plata. Argentina.</li>
+  <li>Performance at Nano Mutek with Null (Live coding collective), Sivori Museum from Buenos Aires. Argentina</li>
+  <li>Live coding performance with Marianne Teixido (México) for Live coding jam at LIMP, Recoleta Cultural Center. Buenos Aires, Argentina.</li>
+  <li>Organization and setup TopLap 15th anniversary streaming, in coperation with Área Cultural de la Universidad del Este & CliC (Colectivo de Live Coders). La Plata, Buenos Aires, Argentina.</li>
+  <h3>2018</h3>
+  <li>c0d3-p03try at GUETO V, Vincent Galeria, City Bell. La Plata. Argentina</li>
+  <li>Talk: 'Imágenes y procesos digitales' (Images and digital proceses) for JavaScript Conference La Plata, Argentina</li>
+  <li>Performance w./ CliC (Colectivo de live coders) at +CODE festival. Buenos Aires, Argentina</li>
+  </div>
+  </ul>
+  </div>
+</div>
 
 
-<p class="w3-justify w3-padding-16"> <br>
-  Flor de Fuego es una artista-orfebre digital que utiliza principalmente código y programación en tiempo real para producir experiencias performáticas. Sus investigaciones giran en torno a conceptos como el cuerpo, espacio, código, lenguaje y caos. Ha participado de diversos festivales internacionales y locales, de manera individual y colectiva. Es profesora recibida de la Facultad de Artes de la Universidad de La Plata. La educación es una parte fundamental en su producción. Colabora con la comunidad de <a href="https://hydra.ojack.xyz/" target="_blank">Hydra</a>, software para visuales de Live Coding creado por <a href="https://ojack.xyz/" target="_blank">Olivia Jack</a> y <a href="https://colectivo-de-livecoders.gitlab.io/" target="_blank">CLiC</a> (colectivo de live coders), Argentina. 
-</p>
-
-<h2>Exhibiciones y performance</h2>
-<h2>2021</h2>
-<p class="w3-justify w3-padding-16">
-Hydra introductory workshop en colaboración con Naoto Hieda at CC Fest (Processing
-Foundation). // Let's make a Giant Feedback Loop on the internet #2, performance coordinada junto con Andrei Jay. // Hydra meetup #4 // Transnodal TOPLAP Algorave internet + Estacion Provincial, La Plata. // 
-Taller de Experimentacion tecnologica en "Nosotras Movemos el mundo", coordinado por el Ministerio de Mujeres, Generos y Diversidad de la Nacion. //Perfromance y workshop en CONURBEAT, Instituto Municipal de las Culturas. Almirante Brown, Buenos Aires. // Amplify Collaboration Fund Recipients con Edy Fung. // Hydra Meetup #5 // MUTEK ES|AR Simposio "Promesas y desafios de la tecnologia frente al genero". // "("."). Un punto, un principio" performance AV, MUTEK ES|AR 2021.  
-</p>
-<h2>2020</h2>
-<p class="w3-justify w3-padding-16">
-Performance con c0d3 p03try ICLC (International Conference on Live Coding),University of Limerick, Irlanda. //
-// c0de p03try en Festival Pumpumyachkan, Asimtria. Ayacucho, Perú. //
- Hydra Meetup #1, #2 #3 //
-Jam  [c0d3 p03try + Jimena Gonzalez (MX)] en "Literatura expandida. Textualidades en contingencia", organizado por Casa del Lago UNAM y Catedra Max Aub.//
-Ephemeris time, AV Explorations at scanlines.xyz NY/BA. //
-"Fractal" at Mutek Montreal, Amplify DAI and British Council. // "Nadar", exhibición virtual en Casa del Lago, UNAM, México. // Let's make a Giant Feedback Loop on the internet, performance coordinada junto con Andrei Jay // 
-Hydra Meetup en Node Forum festival, Frankfurt, Alemania. // Somerset House Studio Amplify DAI, residencia virtual. UK. // “Global Broadcast For a Total Eclipse: 2’ 10” ”, performance en colaboración con Nicky
-Assmann, Rebecca Cummins, and Eric Parren. // "GlitchMe" charla-performance en colaboración con Naoto Hieda at CODAME festival, California, US. 
-</p>
-<h2>2019</h2>
-<p class="w3-justify w3-padding-16">
-Coordinación y realización de streaming de TopLap 15th anniversary stream, en
-conjunto con el Área Cultural de la Universidad del Este y CliC (Colectivo de Live
-Coders). // Performance de live coding con Marianne Teixido (México) en el marco de una Jam de
-live coding en el LIMP del Centro Cultural Recoleta. // Performance audiovisual en el marco del Nano Mutek con el colectivo Null (Live
-coding), Museo Sivori de Buenos Aires. // Workshop sobre el software Hydra para visuales de live coding en Areka, Rosario. // Performance audiovisual de live coding junto con Iris Saladino en colaboración con el
-cierre de la muestra fotográfica de la artista Vivian Galban en Rolf Galería, Buenos Aires. // Charla sobre Hydra en FLISOL LA PLATA, Facultad de Informática Universidad Nacional de La Plata.// Workshop sobre Hydra y Tidal Cycles en Mar del Mundo, Mar del Plata.//
-Exposición de cierre de Laboratorio de arte y programación, coordinado por Guido
-Corallo en el Centro Cultural Ricardo Rojas, Buenos Aires. // Coordinación del curso “Imagenes y procesos digitales” en la TAE, Teatro Argentino de La Plata. // Exposición audiovisual en Amsterdam con el dúo C0d3 p03try en el marco de la
-JSNation, conferencia internacional de JavaScript. // Proyecciones fulldome en el Planetario de la Ciudad de Buenos Aires junto con CliC
-(Colectivo de Live Coders). // Conversatorio “Género, software y programación al vuelo desde Latinoamérica” en
-Centro de Cultura Digital, Ciudad de de México. // Visuales de live coding para Whisky (dúo musical) en el MUTEK AR 2019. // “WIP Pequeño Festival de Artes Digitales y Sonoras” Taller de Hydra y Performance de
-live coding en el CC Matienzo. // Introducción a visuales con Live coding en la Semana del Diseño. Facultad de Artes
-UNLP. // Live Coding en la Noche de Los Museos con CliC (colectivo de live coders). Facultad
-de Exactas UBA. // FemITconf, conferencia de Mujeres en Informatica. Charla y performance sobre live
-coding junto con Iris Saladino. // Performance visuales de live coding en Festival Teorema. // Live Coding para fulldome con Iris Saladino, Festival Domo Lleno 2019 en Bogotá,
-Colombia.    
-</p>
-<h2>2018</h2>
-<p class="w3-justify w3-padding-16"> 
-  Docente en el proyecto E.A.R.T. (Escuela de Arte y Tecnología)
-  Coordinada por el Departamento de Extensión y el de Diseño Multimedial de la
-  Facultad de Artes de la Universidad Nacional de La Plata.// Diseño y realización de videos para la obra “T4” Dirigida por Claudia Billourou en la
-  TAE del Teatro Argentino.// Coordinación de los cursos “Imágenes y procesos digitales” e “Iluminación y video en
-  escena” en la TAE del Teatro Argentino de La Plata.// c0d3-p03try en GUETO V, Vincent Galeria, City Bell. La Plata. //Participación con CliC en la Semana del Sonido de la Universidad Nacional de Quilmes, charla y muestra de
-  sintetizadores analógicos y digitales.// Charla sobre “Imágenes y procesos digitales” para JavaScript Conference La Plata.// Participación en conjunto con CliC (Colectivo de live coders) en el festival +CODE.//
-</p>
-<h2>2017</h2>
-<p class="w3-justify w3-padding-16">
-Asistencia técnica para Tesis Colectiva “Lo inasible, fragmentos de un diálogo imposible” de Rosalba Cuevas y Almendra Zorrilla. Facultad de Artes, Universidad Nacional de La Plata./ 
-<br>
-Diseño, realización y operación de visuales para “Ubuntu” evento de música africana
-del Coro de la Universidad del Este.//
-<br>
-Diseño, realización y operación de visuales para la tesis de escenografía “Lengua
-Cortada” de Gonzalo Monzón. Facultad de Artes, Universidad Nacional de La Plata.// 
-</p>
-<h2>2016</h2>
-<p class="w3-justify w3-padding-16">
-“Obsoleto” Instalación en TAE Galería de la TAE, Teatro Argentino de La Plata //
-<br>
-Diseño multimedial en obra “Dos Mundos para Ana” del grupo “Ciruelas Teatro”, La Plata //
-<br>
-Diseño multimedial en obra “New Balance” dirigida por Claudia Billourou. TAE, Teatro Argentino de La Plata // 
-</p>
 
 
-<!--
-  <p class="w3-justify w3-padding-16"> <br>
-   Es Profesora en Artes Plásticas orientada al Dibujo en la Facultad de Artes de la UNLP, actualmente se encuentra realizando su Tesis en Artes Plásticas. Es adscripta en la cátedra de Fotografía e Imagen Digital en la Facultad de Artes. Investiga sobre imagen digital y medios, produciendo imágenes y sonidos relacionados al live coding, animación, video e internet. Pertenece al colectivo <a href="https://colectivo-de-livecoders.gitlab.io/">CliC (Colectivo de Live Coders)</a> con quienes participaron del festival <a href="http://pluscode.cc/">+CODE</a> en Buenos Aires y diversas charlas como FemIT, NotPinkConf, Ekoparty, Media Chicas, Noche de los Museos de Buenos Aires y La Plata. 
-Participó también del Nano Mutek con un colectivo de live coders mujeres llamado Null y de manera individual como en el <a href="http://www.mutek.org/es/buenos-aires/2019">MUTEK</a> 2019. Ha participado en el Conversatorio sobre Género, software y programación al vuelo en Latinoamérica, realizado en el Centro de Cultura Digital de la Ciudad de México. Además ha realizado proyecciones fulldome en el Planetario de la Ciudad de Buenos Aires y en Bogotá, Colombia para el festival<a href="https://domolleno.gov.co/"> Domo Lleno</a>. Forma parte de un dúo llamado <a href="https://c0d3-p03try.neocities.org/">c0de p03try</a>, han expuesto en lugares como <a href="https://jsnation.com/">JSAmsterdam Nation Conference</a>,<a href="https://iclc.toplap.org/2020/schedule.html">ICLC</a> (International Conference on Live Coding), Irlanda. Festival Pumpumyachkan, Perú. “Música ExperimentAL” en Ciudad de México.
- 
-</p>    
-  -->
-<!-- Footer -->
-<footer class="w3-container w3-padding-64 w3-center w3-black w3-xlarge">
+<script>
 
-  <a href="https://bandcamp.com/flordefuego"><i class="fa fa-bandcamp"></i></a>
-  <a href="https://www.instagram.com/flordefuega/"><i class="fa fa-instagram"></i></a>
-  <a href="https://twitter.com/flordefuego4"><i class="fa fa-twitter"></i></a>
-  <a href="https://github.com/flordefuego/"><i class="fa fa-github"></i></a>
-</footer>
+// create a new hydra-synth instance
+var hydra = new Hydra({ 
+canvas: document.getElementById("myCanvas"),
+detectAudio: false,
+width: window.innerWidth,
+height: window.innerHeight
+});
+
+noise(10)
+.thresh()
+.pixelate(30,30)
+.out()
+
+src(o0)
+.mult(noise(300,2).thresh(),0.1)
+.blend(solid(),0.5)
+.blend(osc(10,0.001,0).modulateRotate(osc(10),2).mask(osc(50).thresh(0.5,0).modulateRotate(osc(3))))
+.pixelate(200,200)
+.out(o1)
+
+render(o1)
+
+setResolution(15,15)
+</script>
 
 </body>
 </html>
