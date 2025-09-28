@@ -138,6 +138,14 @@
 </footer>
 
 <script>
+document.addEventListener("DOMContentLoaded", function() {
+  document.querySelectorAll("img").forEach(img => {
+    if (!img.hasAttribute("loading")) {
+      img.setAttribute("loading", "lazy");
+    }
+  });
+});
+  
 function onClick(element) {
   document.getElementById("img01").src = element.src;
   document.getElementById("modal01").style.display = "block";
@@ -170,5 +178,6 @@ setResolution(15,15)
 
 </body>
 </html>
+
 
 
