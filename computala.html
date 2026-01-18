@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>flor de fuego</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="assets/Px437_IBM_XGA-AI_12x23.ttf">
+<link rel="stylesheet" href="assets/Px437_IBM_XGA-AI_12x23.ttf">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src="https://unpkg.com/hydra-synth"></script>
+</head>
+  <style>
+    .video-container {
+  position: relative;
+  width: 100%;
+  padding-top: 56.25%; /* 16:9 aspect ratio (9/16 * 100) */
+}
+
+.video-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+  </style>
+<body>
+
+<!-- Navbar -->
+<div class="w3-center">
+  <div class="w3-bar w3-white w3-xxxlarge" style="background-color: rgba(0, 0, 0, 0) !important; color:white !important; text-shadow:1px 1px 0 #444">
+  <!-- <a href="index.html" class="w3-bar-item w3-button w3-padding-large w3-black" style="background-color: rgba(0, 0, 0, 0) !important;">fdf</a>-->
+    <a href="bio.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-black">about</a>
+    <a href="work.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-dark-gray">projects</a>
+    <a href="contact.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-light-gray">contact</a>
+  </div>
+</div>
+<div class="w3-bar w3-align-center w3-hide-large" style="background-color: rgba(255, 255, 255, 0.1) !important; color:white !important; text-shadow:1px 1px 0 #444">
+    <a href="bio.html" class="w3-bar-item w3-button w3-padding-large">about</a>
+    <a href="work.html" class="w3-bar-item w3-button w3-padding-large">projects</a>
+    <a href="contact.html" class="w3-bar-item w3-button w3-padding-large">contact</a>
+</div>
+
+<!-- Header -->
+<canvas id="myCanvas"></canvas> 
+
+
+<!-- First Grid -->
+<div class="w3-row-padding w3-padding-64 w3-container w3-center">
+  <div class="w3-content w3-padding w3-text-white" style="text-shadow:1px 1px 0 #444">
+
+   
+   <div class="w3-display-container">
+    <h2>COMPUTALA: Live Coding with Teachable Machine Bootcamp Residency. Led with Naoto Hieda at New Media Art Club, Leicester, UK.
+</h2>
+
+    <div class="w3-row-padding">
+        <div class="w3-container w3-third">
+      <img src="assets/newMedia/WhatsApp Image 2026-01-07 at 7.33.54 PM.jpeg" style="width:100%;cursor:pointer" 
+          onclick="onClick(this)" class="w3-hover-opacity">
+        </div>
+        <div class="w3-container w3-third">
+     <img src="assets/newMedia/WhatsApp Image 2026-01-07 at 7.35.20 PM.jpeg" style="width:100%;cursor:pointer" 
+          onclick="onClick(this)" class="w3-hover-opacity">
+        </div>
+        <div class="w3-container w3-third">
+            <img src="assets/newMedia/WhatsApp Image 2026-01-08 at 6.52.20 PM.jpeg" style="width:100%;cursor:pointer" 
+                 onclick="onClick(this)" class="w3-hover-opacity">
+               </div>
+
+                <div class="w3-container w3-third">
+            <img src="assets/newMedia/WhatsApp Image 2026-01-09 at 1.22.11 PM.jpeg" style="width:100%;cursor:pointer" 
+                 onclick="onClick(this)" class="w3-hover-opacity">
+               </div> 
+            <div class="w3-container w3-third">
+            <img src="assets/newMedia/WhatsApp Image 2026-01-09 at 11.00.15 PM.jpeg" style="width:100%;cursor:pointer" 
+                 onclick="onClick(this)" class="w3-hover-opacity">
+               </div>     
+            <div class="w3-container w3-third">
+            <img src="assets/newMedia/WhatsApp Image 2026-01-09 at 11.00.16 PM.jpeg" style="width:100%;cursor:pointer" 
+                 onclick="onClick(this)" class="w3-hover-opacity">
+               </div>    
+      </div>
+<hr>
+<h3>
+Text by Ngo Chun Phoenix Tse
+</h3>
+<p>This zine emerges from the shared experimentation and conversation during the Hydra Live Coding with Teachable Machine Bootcamp Residency, organised by <a href="https://www.newmediaart.club/" target="_blank">New Media Art Club</a> in January 2026. The bootcamp brought together <a href="https://cyanamber.cargo.site/" target="_blank">Sian Morrell</a>, <a href="http://ngochuntse.com/" target="_blank">Ngo Chun Phoenix Tse</a>, and <a href="https://awesomejash.com/" target="_blank">Jash Yuan</a> as bootcamp residents, led by Flor de Fuego and <a href="https://naotohieda.com/" target="_blank">Naoto Hieda</a>. Across the bootcamp, the artists explored live visual coding on Hydra, engaging with machine learning, as tools for thinking rather than solutions to be optimised.
+The outcome of this process is a collective projection installation developed for COMPUTALA 2026, presented by LCB Depot and New Media Art Club, with support from Arts Council England. This year, the festival reflects AI as an urgent and widely debated subject. COMPUTALA’s interest lies not in technological novelty, but in critical discourse around how artificial intelligence is embedded within creative practice and everyday life.
+The installation responds to the exhibition theme Robots for a Safer World, originally framed as a policy challenge by the previous UK government. Yet Robots for a Safer World is a curious phrase. It carries the tone of science fiction optimism rather than the material realities of nuclear decommissioning, deep-sea engineering, or extractive labour. It imagines the robot as a helper rather than worker, companion rather than mechanism. The language is gentle, even comforting, masking the complex systems of power, labour, and responsibility that automation inevitably reshapes.
+During the Hydra bootcamp, we approached these tensions through practice. Using Hydra as a live visual coding environment, we explored how real-time graphics could function within performance contexts. Alongside this, we worked with Teachable Machine, engaging machine learning not as an opaque intelligence but as a system shaped by input, gesture as well as repetition. Rather than building autonomous agents, we focused on interaction, responsiveness, and miscommunication.
+From this process emerged a series of questions addressed to the audience. These questions are projected alongside simple hand gestures for greeting and recognition, forming a loop of call and response between human bodies and machine vision.
+These questions move between the everyday and the philosophical, from lived interactions with devices to longer traditions of speculative thought, recalling works such as I, Robot and Do Androids Dream of Electric Sheep?. They are not intended to be answered correctly, but to reveal how deeply machines already shape our habits, memories, and sense of self.
+As artists working closely with coding and AI, we are interested not only in intelligence, but in warmth: how computational art might remain attentive to vulnerability and care. We attempt to recognise ourselves within systems we continue to build.
+
+This projection work presents a series of questions addressed to the audience, accompanied by simple hand gestures for greeting and recognition. Interpreted through machine vision, the gestures create a loop of call and response between human bodies and computational systems. The questions move between everyday experience and speculative thought, reflecting on how machines shape habits, memory, and self-awareness. Rather than seeking correct answers, the work foregrounds interaction, misrecognition, and care, exploring how computational art might retain warmth and attentiveness within technological systems.
+</p>
+    </div>
+   
+<div style="position:relative; width:100%; height:0px; padding-bottom:178.218%;">
+    <iframe allow="fullscreen;autoplay" allowfullscreen height="100%" src="assets/newMedia/WhatsApp Video 2026-01-08 at 6.15.55 PM.mp4" width="100%" style="border:none; width:100%; height:100%; position:absolute; left:0px; top:0px; overflow:hidden;"></iframe></div>
+  
+  
+  </div>
+</div>
+
+
+
+<!-- Footer -->
+<footer class="w3-container w3-padding-64 w3-center w3-opacity w3-display-bottommiddle">
+  <div class="w3-display-bottommiddle w3-margin-top">  
+    
+    </div>
+</footer>
+
+<script>
+  
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+}
+
+
+// create a new hydra-synth instance
+var hydra = new Hydra({ 
+canvas: document.getElementById("myCanvas"),
+detectAudio: false,
+width: window.innerWidth,
+height: window.innerHeight
+});
+
+
+gradient(0.1)
+.saturate(0)
+.out()
+src(o0)
+.posterize(12)
+.pixelate(50,100)
+.modulate(shape(999).repeat(200,200).scrollY(0,-0.1))
+.mult(noise(300,2).thresh(),0.1)
+.blend(solid(),0.1).out(o1)
+
+render(o1)
+
+setResolution(15,15)
+</script>
+
+</body>
+</html>
+
+
+
+
